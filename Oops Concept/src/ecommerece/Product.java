@@ -1,7 +1,9 @@
+package ecommerece;
+
 public class Product {
     private String productName;
     private int productId;
-    private double price;
+     double price;
     private int quantityInStock;
 
     public Product(String productName,int productId,double price,int quantityInStock){
@@ -11,11 +13,15 @@ public class Product {
         this.quantityInStock=quantityInStock;
     }
 
-    public void displayDetails(){
-        System.out.println("Product Name: " + productName);
-        System.out.println("Product ID: " + productId);
-        System.out.println("Price: " + price);
-        System.out.println("Quantity in Stock: " + quantityInStock);
-    }
+    public Product(){
 
+    }
+    public void displayDetails(){
+        System.out.println("Product{" +
+                "productName='" + productName + '\'' +
+                ", productId=" + productId +
+                ", price=" + price +
+                ", quantityInStock=" + quantityInStock +
+                '}');
+    }
 }

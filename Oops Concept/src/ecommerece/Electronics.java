@@ -1,3 +1,5 @@
+package ecommerece;
+
 public class Electronics extends Product {
     private String brand;
     private int warrantyPeriod;
@@ -7,11 +9,15 @@ public class Electronics extends Product {
         this.brand= brand;
         this.warrantyPeriod=warrantyPeriod;
     }
+    public Electronics(){
 
+    }
     public void displayDetails(){
         super.displayDetails();
-        System.out.println("Brand : " +brand);
-        System.out.println("Warranty Period : " + warrantyPeriod);
+        System.out.println("Electronics{" +
+                "brand='" + brand + '\'' +
+                ", warrantyPeriod=" + warrantyPeriod +
+                '}');
 
     }
 
